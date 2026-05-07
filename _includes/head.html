@@ -9,9 +9,14 @@
 <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
-<link rel="icon" href="/favicon.ico?v={{ site.time | date: '%Y%m%d%H%M%S' }}" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
 <link rel="manifest" href="/manifest.json">
+
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/icon-512.png?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/icon-192.png?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
+
+<meta name="theme-color" content="#0b1f4d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Magic Math Master">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="stylesheet" href="{{ asset_prefix }}/assets/css/main.css?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
